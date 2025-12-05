@@ -1,7 +1,10 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { Shield, Lock, Eye, Zap, CheckCircle, AlertTriangle, Key, BarChart3 } from 'lucide-react';
+
+
 
 const FloatingOrb = ({ delay, size, position }: { delay: number; size: string; position: string }) => (
   <div

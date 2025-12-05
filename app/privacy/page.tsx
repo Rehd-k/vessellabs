@@ -1,9 +1,12 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Lock, Eye, Share2 } from 'lucide-react';
 import { Footer } from '../component/sections';
 import { Navbar } from '../component/Navbar';
+
+
 
 const FloatingOrb = ({ delay, size, position }: { delay: number; size: string; position: string }) => (
     <div

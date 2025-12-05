@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Layers, ChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import { ViewState } from '../../types';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface NavbarProps {
   currentView: ViewState;
@@ -24,9 +25,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onBack }) => {
       }`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href={'/'} className="flex items-center gap-2 cursor-pointer">
-          <div className="bg-blue-600 text-white p-1.5 rounded-lg">
-            <Layers className="h-5 w-5" />
-          </div>
+          <Image
+            src="/icon.svg"
+            alt="Vessel Labs Logo"
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
           <span className={`font-bold text-xl tracking-tight text-slate-900`}>
             Vessel Labs
           </span>

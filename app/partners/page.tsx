@@ -1,9 +1,12 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { Handshake, TrendingUp, Globe, Award, Zap, Users } from 'lucide-react';
 import { Footer } from '../component/sections';
 import { Navbar } from '../component/Navbar';
+
+
 
 interface PartnerType {
     icon: any;

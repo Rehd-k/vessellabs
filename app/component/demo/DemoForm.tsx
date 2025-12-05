@@ -158,7 +158,7 @@ export const DemoForm: React.FC<DemoFormProps> = ({ industry, onSubmit }) => {
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all"
-              placeholder="+1 (555) 123-4567"
+              placeholder="+234 0800 123 4524"
             />
           </div>
         </div>

@@ -1,10 +1,13 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { Briefcase, MapPin, Users, Zap, Heart, Star } from 'lucide-react';
 import Link from 'next/link';
 import { Footer } from '../component/sections';
 import { Navbar } from '../component/Navbar';
+
+
 
 interface JobListing {
     id: number;

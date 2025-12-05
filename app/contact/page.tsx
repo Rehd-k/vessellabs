@@ -1,8 +1,10 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, Zap, Clock } from 'lucide-react';
 import { Navbar } from '../component/Navbar';
+
 
 const FloatingOrb = ({ delay, size, position }: { delay: number; size: string; position: string }) => (
     <div
@@ -140,9 +142,9 @@ export default function ContactPage() {
                 <section className="py-20 px-6 relative z-10">
                     <div className="container mx-auto max-w-5xl">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <ContactCard icon={Mail} title="Email" content="hello@vesselabs.com" delay={0} />
-                            <ContactCard icon={Phone} title="Phone" content="+1 (555) 123-4567" delay={0.1} />
-                            <ContactCard icon={MapPin} title="Address" content="San Francisco, CA, USA" delay={0.2} />
+                            <ContactCard icon={Mail} title="Email" content="hello@vesselabs.org" delay={0} />
+                            <ContactCard icon={Phone} title="Phone" content="+234 812 0766 716" delay={0.1} />
+                            <ContactCard icon={MapPin} title="Address" content="Lekki, Lagos, NIgeria" delay={0.2} />
                         </div>
                     </div>
                 </section>

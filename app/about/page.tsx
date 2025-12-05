@@ -1,10 +1,13 @@
 'use client';
 
+import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { Zap, Users, Globe, TrendingUp, Heart, Lightbulb } from 'lucide-react';
 import Link from 'next/link';
 import { Navbar } from '../component/Navbar';
 import { Footer } from '../component/sections/Footer';
+
+
 
 const AnimatedCounter = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
     const [count, setCount] = useState(0);

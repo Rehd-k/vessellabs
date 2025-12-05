@@ -1,11 +1,13 @@
 'use client';
 
+
 import React, { useState } from 'react';
 import { IndustryType } from '@/types';
 import { DEMO_CONFIGS } from '@/app/component/demo/demoConstants';
 import { DemoHub, IndustryDemoPage } from '@/app/component/demo';
 import { Navbar } from '@/app/component/Navbar';
 import { Footer } from '@/app/component/sections/Footer';
+
 
 type DemoViewState = 'HUB' | IndustryType;
 
