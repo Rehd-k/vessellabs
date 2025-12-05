@@ -4,10 +4,6 @@ import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
 import { FileText, AlertCircle, CheckCircle, Scale } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: "Terms of Service - Vessel Labs",
-  description: "Review the terms and conditions governing the use of Vessel Labs services",
-};
 
 const FloatingOrb = ({ delay, size, position }: { delay: number; size: string; position: string }) => (
   <div
