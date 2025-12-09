@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useRef } from 'react';
+import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, MeshDistortMaterial, RoundedBox, Torus, Environment, Stars, Line, Cylinder } from '@react-three/drei';
 import * as THREE from 'three';
@@ -87,7 +87,7 @@ export const HeroScene: React.FC = () => {
 
           <AbstractNetwork />
         </Float>
-       {/* <Environment preset="city" /> */}
+        {/* <Environment preset="city" /> */}
       </Canvas>
     </div>
   );
@@ -100,7 +100,9 @@ export const ServerScene: React.FC = () => {
         <ambientLight intensity={1} />
         <spotLight position={[5, 10, 5]} angle={0.5} penumbra={1} intensity={2} color="#3B82F6" />
         <pointLight position={[-5, 0, -5]} intensity={0.5} color="#06B6D4" />
-        <Environment preset="studio" />
+        <Suspense fallback={null}>
+          <Environment preset="studio" />
+        </Suspense>
 
         <Float rotationIntensity={0.2} floatIntensity={0.2} speed={1}>
           <group position={[0, -1, 0]}>
