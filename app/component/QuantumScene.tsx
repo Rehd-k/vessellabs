@@ -101,7 +101,7 @@ export const ServerScene: React.FC = () => {
         <spotLight position={[5, 10, 5]} angle={0.5} penumbra={1} intensity={2} color="#3B82F6" />
         <pointLight position={[-5, 0, -5]} intensity={0.5} color="#06B6D4" />
         <Suspense fallback={null}>
-          <Environment preset="studio" />
+          {/* <Environment preset="studio" /> */}
         </Suspense>
 
         <Float rotationIntensity={0.2} floatIntensity={0.2} speed={1}>
