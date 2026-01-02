@@ -1,0 +1,3 @@
+name = "ricky-bank"
+compatibility_date = "2026-01-02"  # Use current or later date
+compatibility_flags = ["nodejs_compat"]
